@@ -49,7 +49,7 @@ h1{
 }
 .btns{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(60px, auto);
 }
 .btns button{
@@ -75,7 +75,7 @@ h1{
     grid-column: 1/1;
     grid-row: 1;
 }
-.btns button:last-of-type{
+/* .btns button:last-of-type{
     grid-column: 2/4;
     grid-row: 1;
-}
+} */

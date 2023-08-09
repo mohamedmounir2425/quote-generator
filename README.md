@@ -1,7 +1,17 @@
 # quote-generator
 
-hello there, your task is to add social media share buttons, which can be used to share quote on different social media platforms such as whatsapp, twitter, and so on.
 
-fork the repository and start working on it.
+Certainly, adding information to the README file is essential to provide clear instructions for others (and yourself) to understand and use your project. Here's a basic template of what you might include in your README file after completing the task:
 
-best of luck.
+markdown
+Copy code
+# Quote Generator React App
+
+This is a simple React application that generates and displays random quotes. Users can copy quotes and share them on social media platforms.
+
+## Features
+
+- Generate random quotes.
+- Copy a quote to the clipboard.
+- Share quotes on social media platforms.
+

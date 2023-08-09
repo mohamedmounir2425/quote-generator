@@ -23,6 +23,20 @@ const App = () => {
     alert('copied')
   }
 
+  const shareOnTwitter = () => {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      `"${quote.content}" - ${quote.author}`
+    )}`;
+    window.open(twitterUrl, "_blank");
+  };
+
+  const shareOnWhatsApp = () => {
+    const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(
+      `"${quote.content}" - ${quote.author}`
+    )}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <>
       <h1>Quote Generator React App</h1>
@@ -32,6 +46,8 @@ const App = () => {
         <div className="btns">
           <button onClick={copy} className="btn">Copy</button>
           <button onClick={generateQuote}>Generate Another Quote</button>
+          <button onClick={shareOnTwitter} className="btn">Share on Twitter</button>
+          <button onClick={shareOnWhatsApp} className="btn">Share on WhatsApp</button>
         </div>
       </div>
     </>
